@@ -1,0 +1,11 @@
+<div class="overflow-x-auto py-4">
+  <div class="flex space-x-4">
+    <div *ngFor="let item of newsItems" class="flex-shrink-0 w-80">
+      <app-news-mini-card
+        [imageUrl]="item.imageUrl"
+        [title]="item.title"
+        [summary]="item.summary">
+      </app-news-mini-card>
+    </div>
+  </div>
+</div>
