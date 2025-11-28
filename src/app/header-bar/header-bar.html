@@ -9,6 +9,13 @@
     <div class="flex items-center space-x-4">
       <a class="text-gray-600 hover:text-blue-500" href="#">Eventos</a>
       <a class="text-gray-600 hover:text-blue-500" href="#">Noticias</a>
+      <button mat-button [matMenuTriggerFor]="languageMenu">
+        ES 🇲🇽
+      </button>
+      <mat-menu #languageMenu="matMenu">
+        <button mat-menu-item>EN 🇺🇸</button>
+        <button mat-menu-item>FR 🇫🇷</button>
+      </mat-menu>
     </div>
   </nav>
 </header>

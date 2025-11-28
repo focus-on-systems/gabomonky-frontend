@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NewsMiniCardComponent } from '../news-mini-card/news-mini-card';
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-news-carousel',
   standalone: true,
-  imports: [CommonModule, NewsMiniCardComponent],
+    imports: [CommonModule, NewsMiniCardComponent, RouterLink],
   templateUrl: './news-carousel.html',
   styleUrls: ['./news-carousel.css']
 })
