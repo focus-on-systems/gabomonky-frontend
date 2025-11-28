@@ -1,0 +1,9 @@
+<div class="container mx-auto px-4 py-8">
+  <img [src]="newsData.imageUrl" alt="News Image" class="w-full h-auto mb-4">
+  <h1 class="text-4xl font-bold mb-2">{{ newsData.title }}</h1>
+  <p class="text-gray-500 mb-4">{{ newsData.date }}</p>
+  <p class="text-lg font-semibold mb-4">{{ newsData.summary }}</p>
+  <div class="prose max-w-none">
+    <p>{{ newsData.body }}</p>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="flex items-center space-x-4 p-4">
+  <mat-form-field class="flex-grow">
+    <mat-label>¿Buscas un evento?</mat-label>
+    <input matInput>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Rango de Fechas</mat-label>
+    <mat-date-range-input [rangePicker]="picker">
+      <input matStartDate placeholder="Inicio">
+      <input matEndDate placeholder="Fin">
+    </mat-date-range-input>
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-date-range-picker #picker></mat-date-range-picker>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary">Buscar</button>
+</div>

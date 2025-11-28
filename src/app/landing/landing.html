@@ -1,5 +1,5 @@
 <div class="h-full flex flex-col justify-end items-center pb-10">
-  <h1 class="text-5xl font-bold text-gray-800">Gabo monky</h1>
+  <h1 class="text-5xl font-bold text-gray-800">Gabo Monky</h1>
   <div class="mt-4 animate-bounce">
     <svg class="w-10 h-10 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -9,8 +9,13 @@
 
 <section class="bg-gray-100 py-20">
   <div class="container mx-auto px-6">
-    <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Noticias</h2>
+    <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Últimas noticias</h2>
     <app-news-carousel></app-news-carousel>
+    <div class="text-center mt-8">
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Todas las noticias
+      </button>
+    </div>
   </div>
 </section>
 
@@ -29,5 +34,34 @@
         </p>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="bg-gray-100 py-20">
+  <div class="container mx-auto px-6">
+    <div class="flex flex-wrap -mx-4 items-center">
+      <div class="w-full md:w-1/2 px-4">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">En Ruta con Gabo y Tibu</h2>
+        <p class="text-gray-600">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue.
+        </p>
+        <div class="text-center mt-8">
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Ver más
+          </button>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2 px-4 mt-8 md:mt-0">
+        <div class="bg-gray-300 h-64 rounded-lg flex items-center justify-center">
+          <span class="text-gray-500">Image Placeholder</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-white py-20">
+  <div class="container mx-auto px-6">
+    <app-calendar></app-calendar>
   </div>
 </section>
