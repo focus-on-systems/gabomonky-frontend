@@ -20,13 +20,13 @@ export class CalendarComponent {
   ];
   weekdays = ["Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"];
   events: CalendarEvent[] = [
-    { date: new Date(2024, 6, 15), title: 'Concierto de Rock' },
-    { date: new Date(2024, 6, 25), title: 'Fiesta en la Playa' },
-    { date: new Date(2024, 6, 25), title: 'Fiesta en la Playa 2' },
-    { date: new Date(2025, 7, 5), title: 'Festival de Jazz' },
-    { date: new Date(2025, 7, 12), title: 'Noche de Cine al Aire Libre' },
-    { date: new Date(2025, 7, 22), title: 'Torneo de Voleibol' },
-    { date: new Date(2025, 7, 22), title: 'Torneo de Voleibol 2' }
+    { date: new Date(2025, 6, 15), title: 'Concierto de Rock' },
+    { date: new Date(2025, 10, 25), title: 'Fiesta en la Playa' },
+    { date: new Date(2025, 10, 25), title: 'Fiesta en la Playa 2' },
+    { date: new Date(2025, 10, 5), title: 'Festival de Jazz' },
+    { date: new Date(2025, 10, 12), title: 'Noche de Cine al Aire Libre' },
+    { date: new Date(2025, 11, 22), title: 'Torneo de Voleibol' },
+    { date: new Date(2025, 11, 22), title: 'Torneo de Voleibol 2' }
   ];
 
   constructor() {
