@@ -1,0 +1,45 @@
+<div class="p-8">
+  <h1 class="text-4xl font-bold mb-6">{{ event.title }}</h1>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Columna de la imagen -->
+    <div class="md:col-span-1">
+      <img [src]="event.imageUrl" alt="Imagen del evento" class="w-full h-auto rounded-lg shadow-md">
+    </div>
+
+    <!-- Columna de la descripción y tags -->
+    <div class="md:col-span-2">
+      <p class="text-lg mb-4">{{ event.description }}</p>
+      <mat-chip-listbox>
+        <mat-chip-option *ngFor="let tag of event.tags">{{ tag }}</mat-chip-option>
+      </mat-chip-listbox>
+    </div>
+  </div>
+
+  <mat-divider class="my-8"></mat-divider>
+
+  <!-- Noticias relacionadas -->
+  <div>
+    <h2 class="text-2xl font-semibold mb-4">Noticias Relacionadas</h2>
+    <div class="flex flex-row gap-4">
+      <mat-card *ngFor="let news of event.relatedNews">
+        <mat-card-header>
+          <mat-card-title>{{ news.title }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-actions>
+          <a mat-button [href]="news.url" target="_blank">Leer más</a>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+
+  <mat-divider class="my-8"></mat-divider>
+
+  <!-- Formulario de pago -->
+  <div>
+    <h2 class="text-2xl font-semibold mb-4">Inscripción y Pago</h2>
+    <div class="p-4 border rounded-lg bg-gray-50">
+      <p class="text-center">Formulario de pago o bien, link a otro lugar (e.g., asdeporte.com)</p>
+    </div>
+  </div>
+</div>

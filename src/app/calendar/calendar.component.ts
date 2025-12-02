@@ -2,11 +2,13 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CalendarEvent } from './event.model';
 import { EventSearchBarComponent } from './event-search-bar/event-search-bar.component';
+import { EventComponent } from '../event/event.component';
+import {EventListComponent} from '../event-list/event-list.component';
 
 @Component({
   selector: 'app-calendar',
   standalone: true,
-  imports: [CommonModule, EventSearchBarComponent],
+  imports: [CommonModule, EventSearchBarComponent, EventComponent, EventListComponent],
   templateUrl: './calendar.component.html',
   styleUrls: ['./calendar.component.css']
 })
