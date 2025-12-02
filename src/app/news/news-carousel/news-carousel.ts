@@ -13,27 +13,27 @@ import {RouterLink} from "@angular/router";
 export class NewsCarouselComponent {
   newsItems = [
     {
-      imageUrl: 'https://via.placeholder.com/300',
+      imageUrl: '/img/running2.png',
       title: 'News 1',
       summary: 'Summary of the first news item.'
     },
     {
-      imageUrl: 'https://via.placeholder.com/300',
+      imageUrl: '/img/running2.png',
       title: 'News 2',
       summary: 'Summary of the second news item.'
     },
     {
-      imageUrl: 'https://via.placeholder.com/300',
+      imageUrl: '/img/running2.png',
       title: 'News 3',
       summary: 'Summary of the third news item.'
     },
     {
-      imageUrl: 'https://via.placeholder.com/300',
+      imageUrl: '/img/running2.png',
       title: 'News 4',
       summary: 'Summary of the fourth news item.'
     },
     {
-      imageUrl: 'https://via.placeholder.com/300',
+      imageUrl: '/img/running2.png',
       title: 'News 5',
       summary: 'Summary of the fifth news item.'
     }

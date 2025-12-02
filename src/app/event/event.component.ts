@@ -14,7 +14,7 @@ import { MatDividerModule } from '@angular/material/divider';
 export class EventComponent {
   event = {
     title: 'Reto vulcano',
-    imageUrl: 'https://via.placeholder.com/400x300', // Placeholder image
+    imageUrl: '/img/running1.png', // Placeholder image
     description: 'Esta es una descripción detallada del evento. Aquí se explican todos los pormenores, actividades y lo que los asistentes pueden esperar.',
     tags: ['5K', 'Trailing', 'Puebla'],
     relatedNews: [
